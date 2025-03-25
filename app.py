@@ -61,10 +61,14 @@ if st.session_state.approval_status == 1:
         deduction = 0
         if row['smoker_encoded'] == 1:
             deduction += 0.10  # 10% reduction for smokers
-        if row['diabetes_encoded'] == 1:
+        if row['diabetes_encoded'] == 2:
             deduction += 0.10  # 10% reduction for controlled diabetes
+        if row['diabetes_encoded'] == 1:
+            deduction += 0.05  # 5% reduction for controlled diabetes
         if row['hypertension_encoded'] == 1:
             deduction += 0.10  # 10% reduction for controlled hypertension
+        if row['hypertension_encoded'] == 2:
+            deduction += 0.05  # 10% reduction for controlled hypertension
         if row['cholesterol_encoded'] == 1:
             deduction += 0.10  # 10% reduction for high cholesterol  
         if row['exercise_encoded'] == 1:
