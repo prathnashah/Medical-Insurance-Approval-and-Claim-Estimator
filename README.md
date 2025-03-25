@@ -1,5 +1,4 @@
 # Medical-Insurance-Approval-and-Claim-Estimator
-# Medical Insurance Approval and Claim Estimator
 
 This Streamlit app predicts whether a medical insurance claim will be approved and estimates the claim amount based on user input.
 
