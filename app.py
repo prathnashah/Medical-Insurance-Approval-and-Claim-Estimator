@@ -48,7 +48,7 @@ user_data_scaled = scaler_clf.transform(user_data)
 
 # Approval Prediction Button
 if st.button("Check Approval"):
-    st.session_state.approval_status = rf_classifier.predict(user_data_scaled)[0]
+    st.session_state.approval_status = rf_model.predict(user_data_scaled)[0]
 
 # Step 2: Estimate Claim Amount (Only if approved)
 if st.session_state.approval_status == 1:
