@@ -3,7 +3,8 @@ import pandas as pd
 import joblib
 
 # Load models & scalers
-log_model = joblib.load('logistic_model.pkl')
+# log_model = joblib.load('logistic_model.pkl')
+rf_model = joblib.load('rf_classifier.pkl')
 scaler_clf = joblib.load('scaler_clf.pkl')
 
 # Initialize session state for approval status
@@ -47,7 +48,7 @@ user_data_scaled = scaler_clf.transform(user_data)
 
 # Approval Prediction Button
 if st.button("Check Approval"):
-    st.session_state.approval_status = log_model.predict(user_data_scaled)[0]
+    st.session_state.approval_status = rf_classifier.predict(user_data_scaled)[0]
 
 # Step 2: Estimate Claim Amount (Only if approved)
 if st.session_state.approval_status == 1:
