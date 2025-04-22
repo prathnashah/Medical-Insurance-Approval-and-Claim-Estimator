@@ -15,8 +15,6 @@ This Streamlit app predicts whether a medical insurance claim will be approved a
 3. **Claim Estimation:** If approved, a formula calculates the estimated amount.
 
 
-```
-
 ## 🛠 Technologies Used
 - **Python**
 - **Streamlit**
