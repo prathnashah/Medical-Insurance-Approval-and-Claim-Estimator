@@ -33,4 +33,4 @@ This Streamlit app predicts whether a medical insurance claim will be approved a
 For any issues or suggestions, feel free to open an issue or reach out!
 
 ---
-**🔗 Live App:** [Your Render App URL]
+**🔗 Live App: https://medical-insurance-approval-and-claim.onrender.com
